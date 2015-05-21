@@ -1,12 +1,11 @@
 /*--------------------------------*\
   CARDS
 \*--------------------------------*/
-
-//@mixin card-color($param-card-color:#ccc){
      
       $card-min-width: 10em!default;
       $card-margin: 1em!default;
       $card-color: #ccc!default;
+      $card-border-radius: 4px;
       $card-heading-min-height: 10em!default;
       $card-body-min-height: 10em!default;
       $card-body-color: #fff!default;
@@ -17,6 +16,10 @@
         min-height: $card-heading-min-height + $card-body-min-height;
         margin-bottom: $card-margin;
         border: 1px solid $card-color;
+        border-radius: $card-border-radius;
+        /* card__hover */
+        position: relative;
+        overflow: hidden;
 
       .card__heading,
       %card__heading{
@@ -48,12 +51,32 @@
         top: 100%; left: 0; bottom: 0; right: 0;
         border-radius: 50%;
         border: 5px solid $card-color;
-
-      }
         
-      }//./card
+      }
+      /* hover div transition */
+      &:hover{
+        .card__hover{
+          top: 0;
+        }
+      }
+      .card__hover{
+        background-color: #ccc;
+        position: absolute;
+        left:0;
+        height: 100%;
+        border: 1px solid #ccc;
+        transition: top 0.2s ease;
+        top: 100%;
+        padding: 1em;
+        border-radius: $card-border-radius;
+        background-color: #454545;
+        color: #fff;
+        opacity: 0.85;
+      }  
+        
+      }
       /*--------------------------------*\
-        ./CARDS
+        ./CARD
       \*--------------------------------*/
 
 

@@ -1,5 +1,5 @@
 # cards
-Sass cards snippets
+##Sass card snippet
 
 Helper to build cards.
 

@@ -27,7 +27,7 @@ Depending on where the cover div is put it will roll up and down to show addtion
 ```
 
 SCSS
-
+```html
 /*--------------------------------*\
   CARDS
 \*--------------------------------*/
@@ -74,3 +74,4 @@ SCSS
 /*--------------------------------*\
   ./CARD
 \*--------------------------------*/
+```

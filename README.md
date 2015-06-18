@@ -7,6 +7,10 @@ Depending on where the cover div is put it will roll up and down to show addtion
 
 In this case transition is set up to change cover div's absolute position but can be set to update any other property like opacity, color, etc.
 
+See Codepen here:
+http://codepen.io/epastrana/pen/aOLzqE
+
+
 # Usage
 HTML
 ```html

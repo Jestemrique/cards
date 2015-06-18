@@ -6,8 +6,8 @@ The card can have heading, body, footer, etc.
 Depending on where the cover div is put it will roll up and down to show addtional content when hover the card div.
 
 # Usage
-HTML
 
+```html
 <div class="card">
   <div class="card__heading">
     <h3>Lorem ipsum dolor sit amet.</h3>
@@ -24,7 +24,7 @@ HTML
     <p>Footer text.</p>
   </div>
 </div><!-- ./card -->
-
+```
 
 SCSS
 

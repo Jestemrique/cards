@@ -1,125 +1,45 @@
 /*--------------------------------*\
   CARDS
 \*--------------------------------*/
-     
-      $card-min-width: 10em!default;
-      $card-margin: 1em!default;
-      $card-color: #ccc!default;
-      $card-border-radius: 4px;
-      $card-heading-min-height: 10em!default;
-      $card-body-min-height: 10em!default;
-      $card-body-color: #fff!default;
-
-      .card,
-      %card{
-        min-width: $card-min-width;
-        min-height: $card-heading-min-height + $card-body-min-height;
-        margin-bottom: $card-margin;
-        border: 1px solid $card-color;
-        border-radius: $card-border-radius;
-        /* card__hover */
-        position: relative;
-        overflow: hidden;
-
-      .card__heading,
-      %card__heading{
-        min-height: $card-heading-min-height;
-        width: 100%;
-        position: relative;
-        background-color: $card-color;
-      }
-
-      .card__body,
-      %card__body{
-        min-height: $card-body-min-height;
-        position: relative;
-        & > *{
-          position: absolute;
-          margin: auto;
-            left: 0; bottom: 0; right: 0;
-        }
-        padding-left: 1em;
-        padding-right: 1em;
-        padding-bottom: 1em;
-        text-align: center;
-      }
-
-      .card__img,
-      %card__img{
-        position: absolute;
-        margin: auto;
-        top: 100%; left: 0; bottom: 0; right: 0;
-        border-radius: 50%;
-        border: 5px solid $card-color;
-        
-      }
-      /* hover div transition */
-      &:hover{
-        .card__hover{
-          top: 0;
-        }
-      }
-      .card__hover{
-        background-color: #ccc;
-        position: absolute;
-        left:0;
-        height: 100%;
-        border: 1px solid #ccc;
-        transition: top 0.2s ease;
-        top: 100%;
-        padding: 1em;
-        border-radius: $card-border-radius;
-        background-color: #454545;
-        color: #fff;
-        opacity: 0.85;
-      }  
-        
-      }
-      /*--------------------------------*\
-        ./CARD
-      \*--------------------------------*/
-
-
-.card--verde{
-  @extend %card;
-  border: 1px solid #04b486;
-  .card__heading{
-    background-color: #04b486;
+.card,
+%card{
+  width: 300px;
+  outline: 1px solid #ccc;
+  position: relative;
+  overflow: hidden;
+  & > *{
+    position: relative;
+    overflow: hidden;
   }
-  .card__img{
-    border: 5px solid #04b486;
+  &:hover{
+    & .card__cover{
+      top: 0;
+      
+    }
   }
 }
 
-.card--azul{
-  @extend %card;
-  border: 1px solid #01a9db;
   .card__heading{
-    background-color: #01a9db;
+    //outline: 1px solid #ccc;
   }
-  .card__img{
-    border: 5px solid #01a9db;
-  }
-}
 
-.card--rojo{
-  @extend %card;
-  border: 1px solid #e83732;
-  .card__heading{
-    background-color: #e83732;
+  .card__body{
+    //outline: 1px solid #ccc;
   }
-  .card__img{
-    border: 5px solid #e83732;
-  }
-}
 
-.card--amarillo{
-  @extend %card;
-  border: 1px solid #f9af00;
-  .card__heading{
-    background-color: #f9af00;
+  .card__footer{
+    //outline: 1px solid #ccc;
   }
-  .card__img{
-    border: 5px solid #f9af00;
-  }
+
+.card__cover{
+  background-color: #ccc;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: top 0.2s ease;
 }
+/*--------------------------------*\
+  ./CARD
+\*--------------------------------*/

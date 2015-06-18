@@ -5,6 +5,8 @@ Card is covered by a div when hovering it.
 The card can have heading, body, footer, etc.
 Depending on where the cover div is put it will roll up and down to show addtional content when hover the card div.
 
+In this case transition is set up to change cover div's absolute position but can be set to update any other property like opacity, color, etc.
+
 # Usage
 HTML
 ```html
